@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5" name="viewport" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <title>HBD Vagisha 🎂 | From Deepu </title>
+  <meta name="description" content="Happy Birthday Vagisha! 🥳 A special surprise for you " />
+  <link rel="icon" href="https://www.palingit.com/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+</head>
+
+<body style="background: linear-gradient(to bottom, #ffe1e1, #ff217de0), url(./r.jpg); height: 100vh;">
+  <audio src="./y2mate (mp3cut.net).mp3" id="linkmp3" class="sembunyi"></audio>
+
+  <div id="bodyblur">
+    <img src="" id="wallpaper" />
+  </div>
+
+  <div id="Content">
+    <div id="kadoIn">
+      <img src="./Valentine-Surprise.png" alt="Open Gift Button" />
+    </div>
+    <p id="ket"><span style="font-style: italic; color: rgb(0,0,0); margin-top: 3px !important;">Tap to reveal your surprise, dear Mitra </span></p>
+
+    <div class="kumpulanstiker" style="margin-top: 95px;">
+      <img src="https://media.tenor.com/CrhcnDshC9sAAAAi/happy-dance.gif" id="fotostiker" />
+      <img src="https://media1.tenor.com/m/gfDMPcMDmr4AAAAd/happy-birthday-bon-anniversaire.gif" id="fotostiker1" />
+      <img src="https://media1.tenor.com/m/vO1B0vej8MoAAAAd/dance-party.gif" id="fotostiker2" />
+      <img src="https://media.tenor.com/4flgydz3Yu4AAAAi/happy-b-present.gif" id="fotostiker3" />
+      <img src="https://media1.tenor.com/m/8OFU3vn2M4EAAAAC/happy-birthday-hbd.gif" id="fotostiker4" />
+      <img src="https://media.tenor.com/EKUNdZ53C7UAAAAj/tonibear-bear.gif" id="fotostiker5" />
+    </div>
+
+    <p id="halo" class="halo"></p>
+
+    <div>
+      <blockquote id="bq" data-text="🫶">
+        <p id="kalimat">Happy Birthday, French Fries! 🥳 You're one of the purest souls I know 🫶</p>
+        <p id="pesan1">Ab zyada suspense nahi... your little surprise is loading tap here👇</p>
+
+        <div id="kolombaru">
+          <li id="lv1">🌟</li>
+          <li id="lv2">🎉</li>
+          <li id="lv3">🎈</li>
+          <li id="lv4">🍫</li>
+        </div>
+
+        <p id="pesan2">You're not just special... you're *extra* special 😎</p>
+        <p id="pesan3">Tera vibe hi alag hai, yaar 🌈</p>
+        <p id="pesan4" class="sty2">Together as a trio, we turn the simplest moments into the most epic memories.</p>
+        <p id="pesan5" class="sty2">Hope this year brings you loads of happiness, peace, and thoda sa dimag 🤌🤪 ......... kidding 😜 </p>
+        <p id="pesan6" class="sty2">Tum jaisi dost milna seriously blessing hai ❤️</p>
+
+        <p id="opsL">Okay now, click next… aur bhi surprises baaki hai h mere dost😏</p>
+      </blockquote>
+    </div>
+
+    <div id="Tombol"><a id="By">👉 Next</a></div>
+
+    <div id="pesanditolak">
+      <img id="stikerditolak" src="https://feeldreams.github.io/weee.gif" />
+      <p id="kataditolak">Oyy ruk jaa na... ye sab sirf tere liye banaya hai 🥺</p>
+    </div>
+  </div>
+
+  <script>
+    const body = document.querySelector("body");
+    const swalst = Swal.mixin({
+      timer: 2300,
+      allowOutsideClick: false,
+      showConfirmButton: false,
+      timerProgressBar: true,
+      imageHeight: 90,
+    });
+
+    audio = new Audio("" + linkmp3.src);
+    ftganti = 0;
+    fungsi = 0;
+    fungsiAwal = 0;
+    deffotostiker = fotostiker.src;
+    Content.style = "opacity:1;margin-top:16vh";
+    const swals = Swal.mixin({
+      allowOutsideClick: false,
+      cancelButtonColor: "#FF0040",
+      imageHeight: 80,
+    });
+
+    document.getElementById("kadoIn").onclick = function () {
+      if (fungsiAwal == 0) {
+        audio.play();
+        fungsiAwal = 1;
+        kadoIn.style = "transition:all .8s ease;transform:scale(10);opacity:0";
+        wallpaper.style = "transform: scale(1.5);";
+        ket.style = "display:none";
+        setTimeout(initengahan, 300);
+        setTimeout(inipesan, 500);
+      }
+    };
+
+    async function inipesan() {
+      var nama = "Vagisha"; // known best friend
+      window.nama = nama;
+      vketikhalo = "Hey " + nama + "! 🎂";
+      mulainama();
+    }
+
+    var tanya = "Are you ready for some birthday magic? Aabraa ka dhaabra ..... 🪄";
+    var opstanya = "Pick one:";
+    var tompositif = "Yesss! Bring it on 💃";
+    var tomnegatif = "Not today 😐";
+
+    async function pertanyaan() {
+      var { isConfirmed: prtanya } = await swals.fire({
+        title: nama + ", " + tanya,
+        text: "" + opstanya,
+        imageUrl: "" + fotostiker5.src,
+        showCancelButton: true,
+        confirmButtonText: "" + tompositif,
+        cancelButtonText: "" + tomnegatif,
+      });
+
+      if (prtanya) {
+        pesanwhatsapp = "Let's gooo! 🥳";
+        menuju();
+      } else {
+        pesanwhatsapp = "Arre mood bana le na, it's your day! 😌";
+        await swalst.fire({
+          title: "" + kataditolak.innerHTML,
+          timer: 2000,
+          imageUrl: "" + stikerditolak.src,
+        });
+        menuju();
+      }
+    }
+  </script>
+  <script src="a.js"></script>
+</body>
+</html> 
